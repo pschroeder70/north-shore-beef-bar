@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Monda:wght@400;700&display=swap');
+
+.monda-regular {
+  font-family: "Monda", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.monda-bold {
+  font-family: "Monda", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --color-bg: #09080e;
+  --color-main-font: #fdfffc;
+
+  --content-max-width: 1300px; 
+}
+
+html {
+    background-color: var(--color-bg);
+    min-height: 100%;
+    color: var(--color-main-font);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  font-family: "Monda", sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Monda", sans-serif;
+  font-weight: 700;
+}
+
+content {
+  width: var(--content-max-width);
+}

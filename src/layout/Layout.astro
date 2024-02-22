@@ -1,0 +1,25 @@
+---
+import '../style/main.css'
+
+export interface Props {
+	title: string;
+	disc: string;
+}
+
+const { title } = Astro.props as Props;
+const { disc } = Astro.props as Props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+  <meta name="discription" content={disc}>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+	<title>{title}</title>
+</head>
+<body>
+	<slot />
+</body>
+</html>

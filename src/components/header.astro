@@ -1,0 +1,27 @@
+---
+import { Image } from "astro:assets";
+import Logo from "../image/nsbb-logo.jpg";
+---
+
+<div class='header'>
+    <div class='header__content'>
+        <Image src={Logo} width={250} alt="North Shore Beef & Beer, It's Wicked Good!" class="logo__img" />
+    </div>
+</div>
+
+<style>
+    .header {
+        position: sticky;
+        top: 0;
+        margin: 15px 0;
+        width: 100%;
+        height: auto;
+        z-index: 75;
+    }
+
+    .header__content {
+        display: flex;
+        width: 100%;
+        max-width: var(--content-max-width);
+    }
+</style>
