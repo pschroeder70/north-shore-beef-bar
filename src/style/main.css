@@ -14,9 +14,15 @@
 
 :root {
   --color-bg: #09080e;
+  --color-outer: #424242;
   --color-main-font: #fdfffc;
 
   --content-max-width: 1300px; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
 }
 
 html {
@@ -28,6 +34,7 @@ html {
 main {
   display: flex;
   justify-content: center;
+  align-items: center;
   font-family: "Monda", sans-serif;
 }
 
@@ -37,5 +44,12 @@ h1, h2, h3, h4 {
 }
 
 content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-bg);
   width: var(--content-max-width);
+  height: calc(100vh - 80px);
+  margin: 15px;
+  padding: 25px 50px;
 }
